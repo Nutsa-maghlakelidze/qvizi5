@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+
+    <h1>To do:</h1>
+    {% for i in tasks %}
+        <p><b>Task: {{i}}</b> </p>
+        {% if i=='პითონი'%}
+            <p>მომზადება ქვიზისთვის</p>
+        {% elif i=='დალაგება'%}
+            <p>ოთახის მილაგება</p>
+        {% else %}
+            <p>მეცადინეობა ორშაბათისტვის</p>
+            {% endif %}
+        {% endfor %}
+
+
+</body>
+</html>
